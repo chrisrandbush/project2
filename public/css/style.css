@@ -1,0 +1,301 @@
+.wrapper {
+    background-image: url(/images/chicagowrap.jpg);
+    background-repeat: no-repeat;
+    min-height: 850px;
+
+}
+
+nav {
+    width: 100vw;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* nav {
+    text-align: center;
+} */
+
+.heading h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+.heading h5 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card-body {
+    background-color: rgba(53, 53, 53, 0.8);
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: #ED5565;
+}
+
+#cardHeight {
+    height: 290px;
+}
+.crimeDesc p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.searchForm {
+    margin-top: 30px auto 0 auto;
+    padding: inherit;
+    text-align: center;
+    font-size: 1.5em;
+    align-items: center;
+    
+}
+
+#align {
+    text-align: center;
+}
+
+.crimeDesc p,
+.crimeDesc h3 {
+    color: #fff;
+    font-weight: bolder;
+}
+
+#orh3 {
+    padding-top: 20px;
+    color: #fff;
+}
+
+.ui {
+    width: 80vh;
+    padding-left: 0;
+}
+
+#reportBtn {
+    margin-top: 40px;
+    /* padding-top: 40%;
+    padding-bottom: 40%; */
+    text-align: center;
+    
+}
+
+
+
+#reportBtn a {
+
+    padding: 12px 25px;
+    background-color: #ED5565;
+    border: 3px solid #ED5565;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    position: relative;
+    /* top: 80px; */
+    overflow: hidden;
+    transition: .5s;
+    
+    /* display: inline-block; */
+}
+
+#reportBtn a:hover {
+    color: #fff;
+}
+
+#reportBtn a::before {
+    content: "";
+    background-color: #ED5565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+#reportBtn a:hover::before {
+    height: 100%;
+}
+
+.btn-danger {
+    margin-top: 15%;
+    width: 20vh;
+}
+
+@media only screen and (max-width: 991.98px) {
+    /* body {
+        width: 100vw;
+        
+    } */
+    .ui {
+        width: 80%;
+        
+    }
+    .card-body {
+        /* padding: auto; */
+        margin: 5% auto;
+    }
+
+    #reportBtn {
+        padding: auto;
+        margin-top: auto;
+        padding-top: auto;
+        padding-bottom: auto;
+        /* height: 50%; */
+    }
+
+    header {
+        padding-bottom: 25px;
+    }
+
+    
+    #report-info {
+        display: none;
+    }
+    
+    .input-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    article {
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .flag-image {
+        height: 150px;
+        width: 125px;
+        border-radius: 50%;
+    }
+    .image-report {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer {
+        width: 100vw;
+    }
+}
+
+/* BODY SECTION */
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#flag-image {
+    display: flex;
+    align-items: center;
+}
+
+.flag-image {
+   
+    height: 300px;
+    width: 275px;
+    border-radius: 50%;
+}
+
+.pb {
+    padding-bottom: 150px;
+}
+
+#bottom {
+    padding-bottom: 50px;
+}
+
+#height {
+    height: 50px;
+    width: 5%;
+    border-top: 6px dotted gray;
+    /* margin-bottom: 40px; */
+    padding-top: 50px;
+}
+
+section {
+    background-color: rgb(251, 250, 250);
+}
+
+.grey {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* FOOTER SECTION */
+
+/* footer {
+    margin-top: 150px;
+} */
+
+
+/* CONTACT FORM */
+
+.image-report {
+    background-image: url(/images/contact.png);
+    background-size: cover;
+    /* height: 100%; */
+    padding-top: 50px;
+    padding-bottom: 150px;
+
+}
+#police_called {
+    width: 100px;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+}
+
+.shadow-lg {
+    display: flex;
+    
+    width: 60vw;
+    height: fit-content;
+    justify-content: center;
+}
+
+#notes {
+    width: 20vw;
+}
+#send-report {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* file pages */
+
+.flex-container {
+
+    display: flex;
+    /* width: 80vh; */
+    text-align: center;
+    justify-content: center;
+}
+
+.wrapper-report {
+    background-image: linear-gradient(to bottom right, #fff, rgb(187, 184, 184), rgb(68, 68, 68));
+    height: 1000px;
+    
+}
+
+#reportCard {
+    background-color: #fff;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.display-reports {
+    width: 80vw;
+}
+
+
+

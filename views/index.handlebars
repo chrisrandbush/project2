@@ -1,0 +1,454 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar10">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="/crimewatch">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/map">Crime Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/report">Report</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/file">User Reports</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h1 class="intro">Chicago Crime Watch</h1>
+                    <h5 class="sub-heading">View the Crime Map or Report a Crime</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="align">
+                <div class="card-body" style="height: 290px;" >
+
+                    <form action="/map/neighborhood" method="GET" class="searchForm" id="searchForm">
+
+                        <div class="crimeDesc">
+                            <h3 id="align">Search by Neighborhood</h3>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <select name="neighborhood" id="hood" class="neighborhood ui search dropdown"
+                                placeholder="Select Neighborhood" data-search="true" form="searchForm">
+
+                                <option value="">Select Neighborhood</option>
+                                <option value="Rogers Park">Rogers Park</option>
+                                <option value="West Ridge">West Ridge</option>
+                                <option value="Uptown">Uptown</option>
+                                <option value="Lincoln Square">Lincoln Square</option>
+                                <option value="Edison Park">Edison Park</option>
+                                <option value="Norwood Park">Norwood Park</option>
+                                <option value="Jefferson Park">Jefferson Park</option>
+                                <option value="Forest Glen">Forest Glen</option>
+                                <option value="North Park">North Park</option>
+                                <option value="Albany Park">Albany Park</option>
+                                <option value="O’Hare">O’Hare</option>
+                                <option value="Edgewater">Edgewater</option>
+                                <option value="North Center">North Center</option>
+                                <option value="Lakeview">Lakeview</option>
+                                <option value="Lincoln Park">Lincoln Park</option>
+                                <option value="Avondale">Avondale</option>
+                                <option value="Logan Square">Logan Square</option>
+                                <option value="Portage Park">Portage Park</option>
+                                <option value="Irving Park">Irving Park</option>
+                                <option value="Dunning">Dunning</option>
+                                <option value="Montclare">Montclare</option>
+                                <option value="Belmont Cragin">Belmont Cragin</option>
+                                <option value="Hermosa">Hermosa</option>
+                                <option value="Near North Side">Near North Side</option>
+                                <option value="Loop">Loop</option>
+                                <option value="Near South Side">Near South Side</option>
+                                <option value="Humboldt Park">Humboldt Park</option>
+                                <option value="West Town">West Town</option>
+                                <option value="Austin">Austin</option>
+                                <option value="West Garfield Park">West Garfield Park</option>
+                                <option value="East Garfield Park">East Garfield Park</option>
+                                <option value="Near West Side">Near West Side</option>
+                                <option value="North Lawndale">North Lawndale</option>
+                                <option value="South Lawndale">South Lawndale</option>
+                                <option value="Lower West Side">Lower West Side</option>
+                                <option value="Garfield Ridge">Garfield Ridge</option>
+                                <option value="Archer Heights">Archer Heights</option>
+                                <option value="Brighton Park">Brighton Park</option>
+                                <option value="McKinley Park">McKinley Park</option>
+                                <option value="New City">New City</option>
+                                <option value="West Elsdon">West Elsdon</option>
+                                <option value="Gage Park">Gage Park</option>
+                                <option value="Clearing">Clearing</option>
+                                <option value="West Lawn">West Lawn</option>
+                                <option value="Chicago Lawn">Chicago Lawn</option>
+                                <option value="West Englewood">West Englewood</option>
+                                <option value="Englewood">Englewood</option>
+                                <option value="Armour Square">Armour Square</option>
+                                <option value="Douglas">Douglas</option>
+                                <option value="Oakland">Oakland</option>
+                                <option value="Fuller Park">Fuller Park</option>
+                                <option value="Grand Boulevard">Grand Boulevard</option>
+                                <option value="Kenwood">Kenwood</option>
+                                <option value="Washington Park">Washington Park</option>
+                                <option value="Hyde Park">Hyde Park</option>
+                                <option value="Woodlawn">Woodlawn</option>
+                                <option value="South Shore">South Shore</option>
+                                <option value="Bridgeport">Bridgeport</option>
+                                <option value="Greater Grand Crossing">Greater Grand Crossing</option>
+                                <option value="Ashburn">Ashburn</option>
+                                <option value="Auburn Gresham">Auburn Gresham</option>
+                                <option value="Beverly">Beverly</option>
+                                <option value="Washington Heights">Washington Heights</option>
+                                <option value="Mount Greenwood">Mount Greenwood</option>
+                                <option value="Morgan Park">Morgan Park</option>
+                                <option value="Chatham">Chatham</option>
+                                <option value="Avalon Park">Avalon Park</option>
+                                <option value="South Chicago">South Chicago</option>
+                                <option value="Burnside">Burnside</option>
+                                <option value="Calumet Heights">Calumet Heights</option>
+                                <option value="Roseland">Roseland</option>
+                                <option value="Pullman">Pullman</option>
+                                <option value="South Deering">South Deering</option>
+                                <option value="East Side">East Side</option>
+                                <option value="West Pullman">West Pullman</option>
+                                <option value="Riverdale">Riverdale</option>
+                                <option value="Hegewisch">Hegewisch</option>
+
+
+                            </select>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-danger">Click Me</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-6">
+                <div class="card-body" id="report" style="height: 290px;">
+                    <div class="crimeDesc pb-5">
+                        <h3 id="align">Report a Crime</h3>
+                    </div>
+                    <div class="pb-5 pt-0" id="reportBtn">
+                        <a href="/report">Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-body mt-5" id="report-info">
+                    <div class="crimeDesc pb-2">
+                        <h3 id="align">Reporting Works</h3>
+                        <p>All reports made are anonymous. Our goal is to help make Chicago a more safe city for all
+                            to enjoy, and also to make visitors more aware of their surroundings.</p>
+                        <p>So if you see a crime taking place, call the police. If you cannot call the police, tell
+                            us, and we will add it to our mapping.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</header>
+<main class="center">
+    <section class="grey">
+        <div class="flex-container l-container">
+            <div class="row" id="left">
+                <div class="col-md-12 mb-5">
+                    <h2 class="mb-5">We've got your 6!</h2>
+                    <p id="largeText">After years of publicity for being a notoriously dangerous city, our creators
+                        decided that Chicago visitors and residents needed a way to track the crimes that impact the
+                        areas in which
+                        they are involved in. It seemed to be that the concept of putting the crimes and the
+                        corresponding
+                        neighborhoods on a heatmap make it easier for the Crime Mappers user to pinpoint the nearest
+                        wrong-doing
+                        and helps them figure out just what the evil doer has done. We concluded that knowing the area
+                        that
+                        you are visiting or living in and the criminal atmosphere of the neighborhood can help you stay
+                        alert
+                        and aware to live a happier and safer life. Crime Mappers makes it possible to pull up the app
+                        and glance at
+                        live updates of freshly reported crimes that may have happened close to you. Our hope is that
+                        Crime Mappers
+                        can assist with safety and prevent our database from growing as we know that knowledge is power
+                        and this
+                        app is indeed a powerful tool in keeping Chicago informed.
+                    </p>
+                </div>
+                {{!-- <div class="col-md-3 ml-2">
+                <div class="flag-image-side"><img src="images/flag.jpg" alt="flag-image" class="flag-image">
+                </div>
+            </div> --}}
+            </div>
+        </div>
+    </section>
+    {{!-- <div id="height" class="container grey">
+        <div class="row">
+            <div id="bottom-border" class="col-md-2 justify-content-center">
+
+            </div>
+        </div>
+    </div> --}}
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-md-12 ml-2">
+
+                <div class="flag-image-side"><img src="images/flag.jpg" alt="flag-image" class="flag-image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="grey" id="bottom">
+        <div class="flex-container r-container">
+            <div class="row" id="left">
+                {{!-- <div class="col-md-2 mr-2">
+                <div class="flag-image-side"><img src="images/flag.jpg" alt="flag-image" class="flag-image">
+                </div>
+            </div> --}}
+                <div class="col-md-12 mt-5">
+                    <h2 class="mb-5">First on the scene.</h2>
+                    <p id="largeText">While there are many other web apps that alert residents and visitors of
+                        Chicago about
+                        the crime that is happening around the city, Crime Mappers originated out of the first
+                        hand experience
+                        of one of our creators. The development of the application started after our very own
+                        Derek Fuenning
+                        was living in the Midwestern Capital of Illinois and decided that it would help him
+                        tremendously to have
+                        access to a site similar to the one our team has constructed after hearing Derek's
+                        stories and opinions
+                        on Chicago's criminal activity. We believe that what separates our application from the
+                        rest is a personal
+                        history and real life experience that shapes the development of Crime Mappers abilities
+                        and functionality.
+                        It is likely that Chicago will continue to have up and down crime statistics as the
+                        years press on, and
+                        that people will continue to live among it or visit the city for shopping and a show.
+                        With that being the
+                        case, let Crime Mappers guide your way as we will continue to show our support for all
+                        throughout Chicago.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div id="height" class="container white">
+        <div class="row">
+            <div id="bottom-border" class="col-md-2 justify-content-center">
+
+            </div>
+        </div>
+    </div>
+
+    <section class="grey">
+        <div class="flex-container l-container">
+            <div class="row" id="left">
+                <div class="col-md-12">
+                    <h2 class="mb-5">How Crime Mappers Works?</h2>
+                    <p id="largeText">Crime Mappers is an app that does not need you to be too tech savy, and in
+                        fact the only
+                        major heavy lifting that needs done is when a crime is reported which just entails
+                        typing. It does hold
+                        the power of making the user notified of serious crimes committed, but we hope that is
+                        half the battle in
+                        keeping our users safe and up to speed on areas that yield more danger. Let Crime
+                        Mappers be your watch-
+                        ful eye and help you navigate Chicago safely as our heatmap is our most significant
+                        feature. The heatmap
+                        makes it possible for users to glance at a geographical layout of the city and is
+                        informative to say the
+                        least in showing the crimes that happen in a given region.
+                    </p>
+                </div>
+                {{!-- <div class="col-md-3 ml-2">
+                <div class="flag-image-side"><img src="images/flag.jpg" alt="flag-image" class="flag-image">
+                </div>
+            </div> --}}
+            </div>
+        </div>
+    </section>
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="flag-image-side"><img src="images/seal.png" alt="flag-image" class="flag-image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- <div>
+        <div id="googleMap" style="width:100%;height:400px;"></div> -->
+
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+    <div style="background-color: #21d192;">
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">Get connected with us on social networks!</h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                        <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                        <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                        <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic">
+                        <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram white-text"> </i>
+                    </a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+        <!-- Grid row -->
+        <div class="row mt-3 dark-grey-text">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                <!-- Content -->
+                <h6 class="text-uppercase font-weight-bold">Crime Watchers</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>Here to help you be more aware, report what you have seen, and make a difference in the great city of Chicago.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Tools Used</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a class="dark-grey-text" href="https://getbootstrap.com/">MDBootstrap</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="https://www.mysql.com/products/workbench/">MySQL Workbench</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="https://www.starbucks.com/">Coffee</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="https://www.hotpockets.com/en">Fuel</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a class="dark-grey-text" href="https://github.com/DFuenning">Derek</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="https://github.com/boudreau14">Bryan</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="https://github.com/Jeon17">John</a>
+                </p>
+                <p>
+                    <a class="dark-grey-text" href="https://github.com/chrisrandbush">Chris</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <i class="fas fa-home mr-3"></i> Cleveland, OH 44101, US</p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i>CLEARPATH@chicagopolice.org</p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i> + 01 234 567 89</p>
+                <p>
+                    <i class="fas fa-print mr-3"></i> + 01 911</p>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+        <a class="dark-grey-text" href="https://mdbootstrap.com/">Crime Watchers</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
